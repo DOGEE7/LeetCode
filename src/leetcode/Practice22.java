@@ -1,4 +1,4 @@
-package cn.edu.hqu.leetcode;
+package leetcode;
 
 public class Practice22 {
 

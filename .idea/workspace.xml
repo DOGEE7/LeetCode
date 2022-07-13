@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d50ab850-4a69-46cf-a169-66f250321810" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="42461e43-4ab2-4690-8477-10f85dca960e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,93 +26,20 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.Practice17">
-    <configuration name="Practice14" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.edu.hqu.leetcode.Practice14" />
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
       <module name="Leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.edu.hqu.leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Practice15" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.edu.hqu.leetcode.Practice15" />
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <module name="Leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.edu.hqu.leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Practice16" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.edu.hqu.leetcode.Practice16" />
-      <module name="Leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.edu.hqu.leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Practice17" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.edu.hqu.leetcode.Practice17" />
-      <module name="Leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.edu.hqu.leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.edu.hqu.leetcode.Test" />
-      <module name="Leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.edu.hqu.leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Practice17" />
-        <item itemvalue="Application.Practice16" />
-        <item itemvalue="Application.Practice15" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Practice14" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -139,149 +65,146 @@
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="96264000" />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/hqu/leetcode/Practice3.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/Practice3.java</url>
           <line>38</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/hqu/leetcode/Practice4.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/Practice4.java</url>
           <line>97</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/hqu/leetcode/Practice4.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/Practice4.java</url>
           <line>104</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/hqu/leetcode/Practice4.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/Practice4.java</url>
           <line>111</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/hqu/leetcode/Practice5.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/Practice5.java</url>
           <line>45</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/hqu/leetcode/JoinDemo.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/JoinDemo.java</url>
           <line>6</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/hqu/leetcode/Practice8.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/Practice8.java</url>
           <line>104</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/hqu/leetcode/Practice8.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/Practice8.java</url>
           <line>123</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/hqu/leetcode/Practice8.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/Practice8.java</url>
           <line>120</line>
           <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/hqu/leetcode/Practice9.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/Practice9.java</url>
           <line>34</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/hqu/leetcode/Practice10.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/Practice10.java</url>
           <line>70</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/hqu/leetcode/Practice10.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/Practice10.java</url>
           <line>88</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/hqu/leetcode/Practice10.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/Practice10.java</url>
           <line>66</line>
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/hqu/leetcode/Practice11.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/Practice11.java</url>
           <line>40</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/hqu/leetcode/Practice11.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/Practice11.java</url>
           <line>42</line>
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/hqu/leetcode/Practice12.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/Practice12.java</url>
           <line>12</line>
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/hqu/leetcode/Practice12.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/Practice12.java</url>
           <line>62</line>
           <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/hqu/leetcode/Practice13.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/Practice13.java</url>
           <line>15</line>
           <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/hqu/leetcode/Practice14.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/Practice14.java</url>
           <line>33</line>
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/hqu/leetcode/Practice15.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/Practice15.java</url>
           <line>33</line>
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/hqu/leetcode/Practice15.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/Practice15.java</url>
           <line>19</line>
           <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/hqu/leetcode/Practice15.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/Practice15.java</url>
           <line>14</line>
           <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/hqu/leetcode/Practice15.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/Practice15.java</url>
           <line>48</line>
           <option name="timeStamp" value="63" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/hqu/leetcode/Practice16.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/Practice16.java</url>
           <line>26</line>
           <option name="timeStamp" value="65" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/hqu/leetcode/Practice16.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/Practice16.java</url>
           <line>13</line>
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/hqu/leetcode/Practice17.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/Practice17.java</url>
           <line>40</line>
           <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/hqu/leetcode/Practice17.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/Practice17.java</url>
           <line>43</line>
           <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/edu/hqu/leetcode/Practice17.java</url>
+          <url>file://$PROJECT_DIR$/src/leetcode/Practice17.java</url>
           <line>44</line>
           <option name="timeStamp" value="70" />
         </line-breakpoint>

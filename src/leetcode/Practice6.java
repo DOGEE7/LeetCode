@@ -1,4 +1,4 @@
-package cn.edu.hqu.leetcode;
+package leetcode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
