@@ -17,7 +17,10 @@
 [剑指 Offer 53 - I. 在排序数组中查找数字 I](https://leetcode.cn/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)  数组 二分查找 (简单)  
 [剑指 Offer 53 - II. 0～n-1中缺失的数字](https://leetcode.cn/problems/que-shi-de-shu-zi-lcof/) 位运算 数组 哈希表 数学 二分查找 (简单) —— 1.数学(高斯求和公式); 2.遍历; 3.双指针  
 
-
+第 5 天 查找算法（中等）  
+[剑指 Offer 04. 二维数组中的查找](https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/) 数组 二分查找 分治 矩阵 (中等) —— 1.二分法；2.右上角，二叉树查找    
+[剑指 Offer 11. 旋转数组的最小数字](https://leetcode.cn/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/) 数组 二分查找 (简单)  
+[剑指 Offer 50. 第一个只出现一次的字符](https://leetcode.cn/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/) 队列 哈希表 字符串 计数 (简单) —— 1.哈希表；2.数组
 
 
 
@@ -43,6 +46,11 @@
 第 4 天  
 [876. 链表的中间结点](https://leetcode.cn/problems/middle-of-the-linked-list/) 链表 双指针 (简单) —— 1.ListNode列表；2.遍历两次列表（全遍历+半遍历）；3.快慢指针  
 [142. 环形链表 II](https://leetcode.cn/problems/linked-list-cycle-ii/) 哈希表 链表 双指针 (中等) —— 1.HashMap或HashSet; 2.两次双指针（快慢指针）
+
+第 5 天  
+[121. 买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) 数组 动态规划 (简单) —— 动态规划！    
+[409. 最长回文串](https://leetcode.cn/problems/longest-palindrome/) 贪心 哈希表 字符串 (简单) —— 1.数组，`char c;count[c]++; //128个ASCII` 2.哈希表  
+
 
 
 <br/>
