@@ -22,6 +22,15 @@
 [剑指 Offer 11. 旋转数组的最小数字](https://leetcode.cn/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/) 数组 二分查找 (简单)  
 [剑指 Offer 50. 第一个只出现一次的字符](https://leetcode.cn/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/) 队列 哈希表 字符串 计数 (简单) —— 1.哈希表；2.数组
 
+第 6 天 搜索与回溯算法（简单）  
+[剑指 Offer 32 - I. 从上到下打印二叉树](https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/) 树 广度优先搜索 二叉树 (中等)  
+[剑指 Offer 32 - II. 从上到下打印二叉树 II](https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/) 树 广度优先搜索 二叉树 (简单) —— [本题与主站 102 题相同](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)  利用queue的当前长度进行本层遍历  
+[剑指 Offer 32 - III. 从上到下打印二叉树 III](https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/) 树 广度优先搜索 二叉树 (中等) —— 1.双端队列；2.采用倒序Collections.reverse(list)  
+
+第 7 天 搜索与回溯算法（简单）  
+[剑指 Offer 26. 树的子结构](https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof/) 树 深度优先搜索 二叉树 (中等) —— **递归**  
+[剑指 Offer 27. 二叉树的镜像](https://leetcode.cn/problems/er-cha-shu-de-jing-xiang-lcof/) 树 深度优先搜索 广度优先搜索 二叉树 (简单) —— 1.迭代；2.递归  
+[剑指 Offer 28. 对称的二叉树](https://leetcode.cn/problems/dui-cheng-de-er-cha-shu-lcof/) 树 深度优先搜索 广度优先搜索 二叉树 （简单） 
 
 
 <br/>
@@ -48,8 +57,18 @@
 [142. 环形链表 II](https://leetcode.cn/problems/linked-list-cycle-ii/) 哈希表 链表 双指针 (中等) —— 1.HashMap或HashSet; 2.两次双指针（快慢指针）
 
 第 5 天  
-[121. 买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) 数组 动态规划 (简单) —— 动态规划！    
-[409. 最长回文串](https://leetcode.cn/problems/longest-palindrome/) 贪心 哈希表 字符串 (简单) —— 1.数组，`char c;count[c]++; //128个ASCII` 2.哈希表  
+[121. 买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) 数组 动态规划 (简单) —— [股票问题|动态规划](https://github.com/labuladong/fucking-algorithm/blob/master/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%B3%BB%E5%88%97/%E5%9B%A2%E7%81%AD%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98.md)；单层遍历    
+[409. 最长回文串](https://leetcode.cn/problems/longest-palindrome/) 贪心 哈希表 字符串 (简单) —— 1.数组，`char c;count[c]++; //128个ASCII` 2.哈希表
+
+第 6 天  
+[589. N 叉树的前序遍历](https://leetcode.cn/problems/n-ary-tree-preorder-traversal/) 栈 树 深度优先搜索 (简单) —— 1.[递归法系列：一套拳法👊刷掉n个遍历树的问题](https://leetcode.cn/problems/n-ary-tree-preorder-traversal/solution/yi-tao-quan-fa-shua-diao-nge-bian-li-shu-de-wen--3/);2.迭代（栈）  
+[102. 二叉树的层序遍历](https://leetcode.cn/problems/binary-tree-level-order-traversal/) 树 广度优先搜索 二叉树 (中等) —— [BFS 的使用场景总结：层序遍历、最短路径问题](https://leetcode.cn/problems/binary-tree-level-order-traversal/solution/bfs-de-shi-yong-chang-jing-zong-jie-ceng-xu-bian-l/)
+
+第 7 天  
+[704. 二分查找](https://leetcode.cn/problems/binary-search/) 数组 二分查找 (简单) —— [二分法细节详解](https://leetcode.cn/problems/binary-search/solution/er-fen-cha-zhao-xiang-jie-by-labuladong/)  
+[278. 第一个错误的版本](https://leetcode.cn/problems/first-bad-version/) 二分查找 交互 (简单)
+
+
 
 
 

@@ -1,6 +1,5 @@
 package leetcode;
 
-import org.omg.PortableInterceptor.INACTIVE;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

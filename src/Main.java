@@ -1,8 +1,6 @@
 import javax.swing.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.lang.reflect.Array;
+import java.util.*;
 
 class ListNode {
     int val;
@@ -12,66 +10,76 @@ class ListNode {
         val = x;
     }
 }
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode(int x) { val = x; }
+}
 
 class Solution {
-    public int search(int[] nums, int target) {
-        // 找到比目标值小的那个值的索引，二分查找
-        int n = nums.length;
-        int low = 0;
-        int high = n - 1;
-        int mid = 0;
-        while (low <= high) {
-            mid = (low + high) / 2;
-            if (nums[mid] < target) low = mid + 1;
-            else if (nums[mid] > target) high = mid - 1;
-            else break;
-        }
-        int res = 0;
-        if (low <= high) {
-            while (mid >= 0) {
-                if (nums[mid] == target) mid--;
-                else break;
+    public List<List<Integer>> levelOrder(TreeNode root) {
+        List<List<Integer>> list2d=new ArrayList<>();
+        Deque<TreeNode> stack=new LinkedList<>();   //暂时存储，用于转换顺序
+        Queue<TreeNode> queue=new LinkedList<>();   //存储
+        boolean flag=true;  //true:左->右; false：右->左
+        if(root==null)  return list2d;
+        queue.offer(root);
+        while(!queue.isEmpty()){
+            List<Integer> list=new ArrayList<>();
+            for(int i=0;i<queue.size();i++){
+                TreeNode tnode=queue.poll();
+                list.add(tnode.val);
+                if(flag){
+                    if(tnode.left!=null)    stack.push(tnode.left);
+                    if(tnode.right!=null)   stack.push(tnode.right);
+                }else{
+                    if(tnode.right!=null)   stack.push(tnode.right);
+                    if(tnode.left!=null)    stack.push(tnode.left);
+                }
             }
-            mid++;
-            while (mid < n) {
-                if (nums[mid] == target) {
-                    mid++;
-                    res++;
-                } else return res;
-            }
+            list2d.add(list);
+            flag=!flag;
+            while(!stack.isEmpty()) queue.offer(stack.pop());
         }
-        return res;
+        return list2d;
     }
-
-    public int longestPalindrome(String s) {
-        // HashMap:找所有的偶个数+最大的奇个数
-        Map<Character, Integer> map = new HashMap<>();
-        int n = s.length();
-        for (int i = 0; i < n; i++) {
-            char c = s.charAt(i);
-            if (map.containsKey(c)) map.put(c, map.get(c) + 1);
-            else map.put(c, 1);
+    public TreeNode mirrorTree(TreeNode root) {
+        Queue<TreeNode> queue=new LinkedList<>();
+        Queue<TreeNode> newqueue=new LinkedList<>();
+        TreeNode newtree=root;
+        queue.offer(root);
+        newqueue.offer(newtree);
+        while(!queue.isEmpty()){
+            TreeNode node=queue.poll();
+            TreeNode newnode=newqueue.poll();
+            if(node.right!=null){
+                queue.offer(node.right);
+                newnode.left=node.right;
+                newqueue.offer(newnode.left);
+            }
+            if(node.left!=null){
+                queue.offer(node.left);
+                newnode.right=node.left;
+                newqueue.offer(newnode.right);
+            }
         }
-        int res = 0;
-        Set<Character> keys = map.keySet();
-        int maxOdd = 0;
-        for (char k : keys) {
-            if (map.get(k) % 2 == 0) res += map.get(k);
-            else maxOdd = (map.get(k) > maxOdd) ? map.get(k) : maxOdd;
-        }
-        return res + maxOdd;
+        return newtree;
     }
 }
 
 public class Main {
     public static void main(String[] args) {
-//        String s = "civilwartestingwhetherthatnaptionoranynartionsoconceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometodedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatnationmightliveItisaltogetherfangandproperthatweshoulddothisButinalargersensewecannotdedicatewecannotconsecratewecannothallowthisgroundThebravelmenlivinganddeadwhostruggledherehaveconsecrateditfaraboveourpoorponwertoaddordetractTgheworldadswfilllittlenotlenorlongrememberwhatwesayherebutitcanneverforgetwhattheydidhereItisforusthelivingrathertobededicatedheretotheulnfinishedworkwhichtheywhofoughtherehavethusfarsonoblyadvancedItisratherforustobeherededicatedtothegreattdafskremainingbeforeusthatfromthesehonoreddeadwetakeincreaseddevotiontothatcauseforwhichtheygavethelastpfullmeasureofdevotionthatweherehighlyresolvethatthesedeadshallnothavediedinvainthatthisnationunsderGodshallhaveanewbirthoffreedomandthatgovernmentofthepeoplebythepeopleforthepeopleshallnotperishfromtheearth";
-//        Solution sol = new Solution();
-//        System.out.println(sol.longestPalindrome(s));
-        int[] count=new int[128];
-        char ch='a';
-        count[ch]++;
-        System.out.println(count[ch]);
+        TreeNode root=new TreeNode(3);
+        TreeNode nodel=new TreeNode(9);
+        TreeNode noder=new TreeNode(20);
+        root.left=nodel;
+        root.right=noder;
+        noder.left=new TreeNode(15);
+        noder.right=new TreeNode(7);
+        Solution sol=new Solution();
+        sol.mirrorTree(root);
+
 
     }
 }
