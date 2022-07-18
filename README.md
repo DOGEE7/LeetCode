@@ -68,7 +68,7 @@
 [704. 二分查找](https://leetcode.cn/problems/binary-search/) 数组 二分查找 (简单) —— [二分法细节详解](https://leetcode.cn/problems/binary-search/solution/er-fen-cha-zhao-xiang-jie-by-labuladong/)  
 [278. 第一个错误的版本](https://leetcode.cn/problems/first-bad-version/) 二分查找 交互 (简单) —— 二分法细节`while(left<right); right=mid; left=mid+1; 最后判定条件是left==right`
 
-  
+第 8 天  
 
 
 
