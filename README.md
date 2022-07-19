@@ -32,6 +32,14 @@
 [剑指 Offer 27. 二叉树的镜像](https://leetcode.cn/problems/er-cha-shu-de-jing-xiang-lcof/) 树 深度优先搜索 广度优先搜索 二叉树 (简单) —— 1.迭代；2.递归  
 [剑指 Offer 28. 对称的二叉树](https://leetcode.cn/problems/dui-cheng-de-er-cha-shu-lcof/) 树 深度优先搜索 广度优先搜索 二叉树 （简单） 
 
+第 8 天 动态规划（简单）  
+[剑指 Offer 10- I. 斐波那契数列](https://leetcode.cn/problems/fei-bo-na-qi-shu-lie-lcof/) 记忆化搜索 数学 动态规划 (简单) —— 1.递归实现动态规划（记忆化搜索，即设置缓存数组）；2.递推实现动态规划；3.矩阵幂；4.打表（根据已知的数据范围）  
+[剑指 Offer 10- II. 青蛙跳台阶问题](https://leetcode.cn/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/) 记忆化搜索 数学 动态规划 (简单) —— [注意：本题与主站 70 题相同](https://leetcode-cn.com/problems/climbing-stairs/) 所有方法同上（在动态规划中，状态是跳1或跳2，选择是当前的台阶数0~n)  
+[剑指 Offer 63. 股票的最大利润](https://leetcode.cn/problems/gu-piao-de-zui-da-li-run-lcof/) 数组 动态规划 (中等) —— [注意：本题与主站 121 题相同](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)    
+
+
+
+
 
 <br/>
 
@@ -69,6 +77,10 @@
 [278. 第一个错误的版本](https://leetcode.cn/problems/first-bad-version/) 二分查找 交互 (简单) —— 二分法细节`while(left<right); right=mid; left=mid+1; 最后判定条件是left==right`
 
 第 8 天  
+[98. 验证二叉搜索树](https://leetcode.cn/problems/validate-binary-search-tree/) 树 深度优先搜索 二叉搜索树 二叉树 (中等) —— 1.（递归/非递归）中序遍历结果为递增；2.递归设置边界值（最大值、最小值）  
+[235. 二叉搜索树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/) 树 深度优先搜索 二叉搜索树 二叉树 (简单) —— 利用二叉搜索树的特性（递归/迭代）`(root.val-p.val)*(root.val-q.val)<=0     // 替代比较`  
+
+
 
 
 

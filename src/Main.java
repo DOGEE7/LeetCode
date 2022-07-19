@@ -66,19 +66,38 @@ class Solution {
         }
         return newtree;
     }
+    public int fib(int n) {
+        if(n==1 || n==0) return n;
+        return fib(n-1)+fib(n-2);
+    }
+    public int maxProfit(int[] prices) {
+        // 动态规划：状态：天数n、买卖一次k=1、reset(0或1)是否拥有股票；选择：卖、买、reset
+        int n=prices.length;
+        int[][] dp=new int[n+1][2];
+        dp[0][0]=0;
+        dp[0][1]=-prices[0];
+        for(int i=1;i<n+1;i++){
+            dp[i][0]=Math.max(dp[i-1][0],dp[i-1][1]+prices[i-1]);   // 当前无股票
+            dp[i][1]=Math.max(dp[i-1][1],-prices[i-1]);   // 当前持有股票
+        }
+        return dp[n][0];
+    }
 }
 
 public class Main {
+
     public static void main(String[] args) {
-        TreeNode root=new TreeNode(3);
-        TreeNode nodel=new TreeNode(9);
-        TreeNode noder=new TreeNode(20);
-        root.left=nodel;
-        root.right=noder;
-        noder.left=new TreeNode(15);
-        noder.right=new TreeNode(7);
+//        TreeNode root=new TreeNode(3);
+//        TreeNode nodel=new TreeNode(9);
+//        TreeNode noder=new TreeNode(20);
+//        root.left=nodel;
+//        root.right=noder;
+//        noder.left=new TreeNode(15);
+//        noder.right=new TreeNode(7);
         Solution sol=new Solution();
-        sol.mirrorTree(root);
+//        sol.mirrorTree(root);
+        int[] prices=new int[]{7,1,5,3,6,4};
+        System.out.println(sol.maxProfit(prices));
 
 
     }
