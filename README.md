@@ -37,6 +37,16 @@
 [剑指 Offer 10- II. 青蛙跳台阶问题](https://leetcode.cn/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/) 记忆化搜索 数学 动态规划 (简单) —— [注意：本题与主站 70 题相同](https://leetcode-cn.com/problems/climbing-stairs/) 所有方法同上（在动态规划中，状态是跳1或跳2，选择是当前的台阶数0~n)  
 [剑指 Offer 63. 股票的最大利润](https://leetcode.cn/problems/gu-piao-de-zui-da-li-run-lcof/) 数组 动态规划 (中等) —— [注意：本题与主站 121 题相同](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)    
 
+第 9 天 动态规划（中等）  
+[剑指 Offer 42. 连续子数组的最大和](https://leetcode.cn/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/) 数组 分治 动态规划 (简单) —— [注意：本题与主站 53 题相同](https://leetcode-cn.com/problems/maximum-subarray/)  —— 动态规划  
+[剑指 Offer 47. 礼物的最大价值](https://leetcode.cn/problems/li-wu-de-zui-da-jie-zhi-lcof/) 数组 动态规划 矩阵 (中等) —— 动态规划（转移矩阵`f(i,j)=max[f(i,j−1),f(i−1,j)]+grid(i,j)`）  
+
+第 10 天 动态规划（中等）  
+[剑指 Offer 46. 把数字翻译成字符串](https://leetcode.cn/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/) 字符串 动态规划 (中等) —— 1.青蛙跳台阶；2.动态规划：状态转移矩阵！`若10<=num%100<=25,dp[i]=dp[i-1]+dp[i-2]; 否则dp[i]=dp[i-1]`    
+[剑指 Offer 48. 最长不含重复字符的子字符串](https://leetcode.cn/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/) 哈希表 字符串 滑动窗口 (中等) —— [注意：本题与主站 3 题相同](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) 动态指针×;滑动窗口，用set维护√
+
+
+
 
 
 
@@ -80,7 +90,13 @@
 [98. 验证二叉搜索树](https://leetcode.cn/problems/validate-binary-search-tree/) 树 深度优先搜索 二叉搜索树 二叉树 (中等) —— 1.（递归/非递归）中序遍历结果为递增；2.递归设置边界值（最大值、最小值）  
 [235. 二叉搜索树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/) 树 深度优先搜索 二叉搜索树 二叉树 (简单) —— 利用二叉搜索树的特性（递归/迭代）`(root.val-p.val)*(root.val-q.val)<=0     // 替代比较`  
 
+第 9 天  (Both)  
+[733. 图像渲染](https://leetcode.cn/problems/flood-fill/) 深度优先搜索 广度优先搜索 数组 矩阵 (简单)
+[200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/) 深度优先搜索 广度优先搜索 并查集 数组 矩阵 (中等) —— [岛屿类问题的通用解法、DFS 遍历框架](https://leetcode.cn/problems/number-of-islands/solution/dao-yu-lei-wen-ti-de-tong-yong-jie-fa-dfs-bian-li-/)
 
+第 10 天  
+[509. 斐波那契数](https://leetcode.cn/problems/fibonacci-number/) 递归 记忆化搜索 数学 动态规划 (简单)—— [动态规划套路详解](https://leetcode.cn/problems/fibonacci-number/solution/dong-tai-gui-hua-tao-lu-xiang-jie-by-labuladong/)  
+[70. 爬楼梯](https://leetcode.cn/problems/climbing-stairs/) 记忆化搜索 数学 动态规划 (简单)  
 
 
 

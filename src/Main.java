@@ -82,10 +82,89 @@ class Solution {
         }
         return dp[n][0];
     }
+    public int maxValue(int[][] grid) {
+        // 动态规划——状态为走m+n-1格、2个方向（选择:右0-下1）
+        // 每一步都最大，结果最大？
+        int m=grid.length;
+        int n=grid[0].length;
+        int[] dp=new int[m+n-1];
+        for(int i=0,j=0,k=0; k<(m+n-1);k++){
+            if(k==0){
+                dp[i]=grid[0][0];
+                continue;
+            }
+            if(i>=m-1 && j<n-1)    dp[k]=dp[k-1]+grid[m-1][j++];
+            else if(i<m-1 && j>=n-1)    dp[k]=dp[k-1]+grid[i++][n-1];
+            else if(i<m-1 && j<n-1){    // 向右j++；向下i++
+                if(dp[k-1]+grid[i][j+1]>dp[k-1]+grid[i+1][j]){
+                    dp[k]=dp[k-1]+grid[i][j+1];
+                    j++;
+                }else{
+                    dp[k]=dp[k-1]+grid[i+1][j];
+                    i++;
+                }
+            }else   break;
+
+        }
+        return dp[m+n-2];
+
+    }
+
+    public int translateNum(int num) {
+        // 动态规划 1.若num%100>=10&&<=25:dp[i]=dp[i-1]+dp[i-2];2.若num%100<10或>25，dp[i]=dp[i-1]
+        int dpi=0,dpi_1=1,dpi_2=1,x,y=num%10;
+        while(num>0){
+            num=num/10;
+            x=num%10;
+            int tmp=x*10+y;
+            dpi=(tmp>=10 && tmp<=25)?dpi_1+dpi_2:dpi_1;
+            dpi_2=dpi_1;
+            dpi_1=dpi;
+            y=x;
+        }
+        return dpi;
+    }
+
+    public int lengthOfLongestSubstring(String s) {
+        // 动态规划：如果s[i]不在子串中，dp[i]=dp[i-1]+1; 否则max=dp[i-1]>max?dp[i-1]:max,dp[i-dp[i-1]+1]=1
+        int n=s.length();
+        if(n<=1)    return n;
+        int[] dp=new int[n];
+        int maxLen=0;
+        String subS="";
+        int i=0;
+        while(i<n){
+            char c=s.charAt(i);
+            if(i==0){
+                dp[0]=1;
+                subS=s.substring(i,i+1);
+                maxLen=1;
+                i++;
+                continue;
+            }
+            if(subS.indexOf(c)==-1){
+                dp[i]=dp[i-1]+1;
+                subS=subS+c;
+                i++;
+            }else{
+                maxLen=dp[i-1]>maxLen?dp[i-1]:maxLen;
+                i=i-subS.length()+1;
+                subS=s.substring(i,i+1);
+                dp[i]=1;
+                i++;
+            }
+        }
+        return maxLen;
+    }
 }
 
 public class Main {
-
+    int N=30;
+    static int[] cache=new int[30];
+    static {
+        cache[0]=0;
+        cache[1]=1;
+    }
     public static void main(String[] args) {
 //        TreeNode root=new TreeNode(3);
 //        TreeNode nodel=new TreeNode(9);
@@ -97,7 +176,17 @@ public class Main {
         Solution sol=new Solution();
 //        sol.mirrorTree(root);
         int[] prices=new int[]{7,1,5,3,6,4};
-        System.out.println(sol.maxProfit(prices));
+        int[][] grid={{1,3,1},{1,5,1},{4,2,1}};
+//        System.out.println(sol.maxProfit(prices));
+//        System.out.println(sol.maxValue(grid));
+//        System.out.println(sol.lengthOfLongestSubstring("abcabcbb"));
+        Deque<int[]> stack =new LinkedList<>();
+        stack.push(new int[]{0, 9});
+        int[] tmp=stack.pop();
+        System.out.printf("%d,%d",tmp[0],tmp[1]);
+        cache[0]=0;
+
+
 
 
     }
