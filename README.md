@@ -1,3 +1,4 @@
+*注：以下题目均来源于[LeetCode](https://leetcode.cn/)*
 ### 《剑指offer（第2版）》
 第 1 天 栈与队列（简单）  
 [剑指 Offer 09. 用两个栈实现队列](https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)  简单 （栈 设计 队列）<br/>
@@ -44,6 +45,10 @@
 第 10 天 动态规划（中等）  
 [剑指 Offer 46. 把数字翻译成字符串](https://leetcode.cn/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/) 字符串 动态规划 (中等) —— 1.青蛙跳台阶；2.动态规划：状态转移矩阵！`若10<=num%100<=25,dp[i]=dp[i-1]+dp[i-2]; 否则dp[i]=dp[i-1]`    
 [剑指 Offer 48. 最长不含重复字符的子字符串](https://leetcode.cn/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/) 哈希表 字符串 滑动窗口 (中等) —— [注意：本题与主站 3 题相同](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) 动态指针×;滑动窗口，用set维护√
+
+第 11 天 双指针（简单）  
+[剑指 Offer 18. 删除链表的节点](https://leetcode.cn/problems/shan-chu-lian-biao-de-jie-dian-lcof/) 链表 (简单)  
+[剑指 Offer 22. 链表中倒数第k个节点](https://leetcode.cn/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/) 链表 双指针 (简单)
 
 
 
@@ -98,13 +103,16 @@
 [509. 斐波那契数](https://leetcode.cn/problems/fibonacci-number/) 递归 记忆化搜索 数学 动态规划 (简单)—— [动态规划套路详解](https://leetcode.cn/problems/fibonacci-number/solution/dong-tai-gui-hua-tao-lu-xiang-jie-by-labuladong/)  
 [70. 爬楼梯](https://leetcode.cn/problems/climbing-stairs/) 记忆化搜索 数学 动态规划 (简单)  
 
-
-
+第 11 天  
+[746. 使用最小花费爬楼梯]() 数组 动态规划 (简单)  —— 解题帖  
+[62. 不同路径]() 数学 动态规划 组合数学 (中等) —— 数学排列组合;动态规划`dp[i,j]=dp[i,j-1]+dp[i-1,j]`，空间优化，二维dp变一维（逐行更替）  
 
 
 
 
 <br/>
+
+
 
 
 

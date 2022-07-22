@@ -156,6 +156,19 @@ class Solution {
         }
         return maxLen;
     }
+    public int uniquePaths(int m, int n) {
+        // 数学，C(m+n-2)(m-1):总共走m+n-2，向右走m-1步
+        int a=m+n-2;
+        int b=(m<n)?m-1:n-1;
+        int up=1,down=1;
+        while(b!=0){
+            up*=a;
+            down*=b;
+            a--;
+            b--;
+        }
+        return up/down;
+    }
 }
 
 public class Main {
@@ -175,16 +188,8 @@ public class Main {
 //        noder.right=new TreeNode(7);
         Solution sol=new Solution();
 //        sol.mirrorTree(root);
-        int[] prices=new int[]{7,1,5,3,6,4};
-        int[][] grid={{1,3,1},{1,5,1},{4,2,1}};
-//        System.out.println(sol.maxProfit(prices));
-//        System.out.println(sol.maxValue(grid));
-//        System.out.println(sol.lengthOfLongestSubstring("abcabcbb"));
-        Deque<int[]> stack =new LinkedList<>();
-        stack.push(new int[]{0, 9});
-        int[] tmp=stack.pop();
-        System.out.printf("%d,%d",tmp[0],tmp[1]);
-        cache[0]=0;
+        System.out.println(sol.uniquePaths(10,10));
+
 
 
 
