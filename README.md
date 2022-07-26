@@ -50,6 +50,14 @@
 [剑指 Offer 18. 删除链表的节点](https://leetcode.cn/problems/shan-chu-lian-biao-de-jie-dian-lcof/) 链表 (简单)  
 [剑指 Offer 22. 链表中倒数第k个节点](https://leetcode.cn/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/) 链表 双指针 (简单)
 
+第 12 天 双指针（简单）  
+[剑指 Offer 25. 合并两个排序的链表](https://leetcode.cn/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/) 递归 链表 (简单) —— [注意：本题与主站 21 题相同](https://leetcode-cn.com/problems/merge-two-sorted-lists/)    
+[面试题52. 两个链表的第一个公共节点](https://leetcode.cn/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/) 哈希表 链表 双指针 (简单) —— [本题与主站 160 题相同](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/) 浪漫到了！解题：你变成我，走过我走过的路。 我变成你，走过你走过的路。 然后我们便相遇了..
+
+第 13 天 双指针（简单）  
+[剑指 Offer 21. 调整数组顺序使奇数位于偶数前面](https://leetcode.cn/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/) 数组 双指针 排序 (简单)
+[剑指 Offer 57. 和为s的两个数字](https://leetcode.cn/problems/he-wei-sde-liang-ge-shu-zi-lcof/) 数组 双指针 二分查找 (简单) —— 注意：警惕相加结果溢出，用`target-nums[i]==target-nums[j]`代替相加  
+[剑指 Offer 58 - I. 翻转单词顺序](https://leetcode.cn/problems/fan-zhuan-dan-ci-shun-xu-lcof/) 双指针 字符串 (简单) —— [注意：本题与主站 151 题相同](https://leetcode-cn.com/problems/reverse-words-in-a-string/) —— 1.`strip();split();join()`; 2.`strip();split();StringBuilder()`; 3.双指针+StringBuilder();
 
 
 
@@ -104,8 +112,25 @@
 [70. 爬楼梯](https://leetcode.cn/problems/climbing-stairs/) 记忆化搜索 数学 动态规划 (简单)  
 
 第 11 天  
-[746. 使用最小花费爬楼梯]() 数组 动态规划 (简单)  —— 解题帖  
-[62. 不同路径]() 数学 动态规划 组合数学 (中等) —— 数学排列组合;动态规划`dp[i,j]=dp[i,j-1]+dp[i-1,j]`，空间优化，二维dp变一维（逐行更替）  
+[746. 使用最小花费爬楼梯](https://leetcode.cn/problems/min-cost-climbing-stairs/) 数组 动态规划 (简单)  —— 写了个题解  
+[62. 不同路径](https://leetcode.cn/problems/unique-paths/) 数学 动态规划 组合数学 (中等) —— 数学排列组合;动态规划`dp[i,j]=dp[i,j-1]+dp[i-1,j]`，空间优化，二维dp变一维（逐行更替）  
+
+第 12 天  
+[438. 找到字符串中所有字母异位词](https://leetcode.cn/problems/find-all-anagrams-in-a-string/) 哈希表 字符串 滑动窗口 (中等) —— 借助数组的滑动窗口   
+[424. 替换后的最长重复字符](https://leetcode.cn/problems/longest-repeating-character-replacement/) 哈希表 字符串 滑动窗口 (中等) —— 借助数组的滑动窗口：`sarr[s.charAt(left) - 'A']--;left++;`  
+
+第 13 天  
+[1. 两数之和](https://leetcode.cn/problems/two-sum/) 数组 哈希表 (简单) —— 1.借助map,因为需要下标，不然采用set即可；  
+[299. 猜数字游戏](https://leetcode.cn/problems/bulls-and-cows/) 哈希表 字符串 计数 (中等) —— 借助两个数组，遍历两次，公牛数和奶牛数分开计算  
+
+第 14 天
+[844. 比较含退格的字符串](https://leetcode.cn/problems/backspace-string-compare/) 栈 双指针 字符串 模拟 (简单) —— 1.匹配（消除）问题是栈/队列的强项；2.双指针（思路好理解，编码不简单）    
+[394. 字符串解码](https://leetcode.cn/problems/decode-string/) 栈 递归 字符串 (中等) —— 1.栈：思路理解，编码难；2.递归  
+
+第 15 天
+[1046. 最后一块石头的重量](https://leetcode.cn/problems/last-stone-weight/) 数组 堆（优先队列）(简单) —— 大顶堆:`PriorityQueue<Integer> heap=new PriorityQueue<>((a,b)->b-a);`    
+[692. 前K个高频单词](https://leetcode.cn/problems/top-k-frequent-words/) 字典树 哈希表 字符串 桶排序 计数 排序 堆（优先队列） (中等) —— 小顶堆+哈希表（难）  
+
 
 
 
