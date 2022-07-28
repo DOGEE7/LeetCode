@@ -59,9 +59,14 @@
 [剑指 Offer 57. 和为s的两个数字](https://leetcode.cn/problems/he-wei-sde-liang-ge-shu-zi-lcof/) 数组 双指针 二分查找 (简单) —— 注意：警惕相加结果溢出，用`target-nums[i]==target-nums[j]`代替相加  
 [剑指 Offer 58 - I. 翻转单词顺序](https://leetcode.cn/problems/fan-zhuan-dan-ci-shun-xu-lcof/) 双指针 字符串 (简单) —— [注意：本题与主站 151 题相同](https://leetcode-cn.com/problems/reverse-words-in-a-string/) —— 1.`strip();split();join()`; 2.`strip();split();StringBuilder()`; 3.双指针+StringBuilder();
 
+第 14 天 搜索与回溯算法（中等）  
+[剑指 Offer 12. 矩阵中的路径](https://leetcode.cn/problems/ju-zhen-zhong-de-lu-jing-lcof/) 数组 回溯 矩阵 （中等）—— [注意：本题与主站 79 题相同](https://leetcode-cn.com/problems/word-search/) —— 搜索回溯法（递归），看labuladong算法笔记  
+[剑指 Offer 13. 机器人的运动范围](https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/) 深度优先搜索 广度优先搜索 动态规划 (中等)
 
-
-
+第 15 天 搜索与回溯算法（中等）  
+[剑指 Offer 34. 二叉树中和为某一值的路径](https://leetcode.cn/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/) 树 深度优先搜索 回溯 二叉树 (中等) —— [注意：本题与主站 113 题相同](https://leetcode-cn.com/problems/path-sum-ii/) DFS回溯搜索（我做出来啦~还写了题解~）：可以不用Collections.copy()，大佬用res.add(new ArrayList(path))    
+[剑指 Offer 36. 二叉搜索树与双向链表](https://leetcode.cn/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/) 栈 树 深度优先搜索 二叉搜索树 链表 二叉树 双向链表 (中等) —— [注意：本题与主站 426 题相同](https://leetcode-cn.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/) 知道中序遍历，但具体咋整T_T(全局变量，prev和head)      
+[剑指 Offer 54. 二叉搜索树的第k大节点](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/) 树 深度优先搜索 二叉搜索树 二叉树 (简单) —— ”简单题我重拳出击“，右根左遍历，用类变量来维护k和res(终于有一次能和大佬的代码一样了)
 
 
 <br/>
@@ -129,9 +134,7 @@
 
 第 15 天
 [1046. 最后一块石头的重量](https://leetcode.cn/problems/last-stone-weight/) 数组 堆（优先队列）(简单) —— 大顶堆:`PriorityQueue<Integer> heap=new PriorityQueue<>((a,b)->b-a);`    
-[692. 前K个高频单词](https://leetcode.cn/problems/top-k-frequent-words/) 字典树 哈希表 字符串 桶排序 计数 排序 堆（优先队列） (中等) —— 小顶堆+哈希表（难）  
-
-
+[692. 前K个高频单词](https://leetcode.cn/problems/top-k-frequent-words/) 字典树 哈希表 字符串 桶排序 计数 排序 堆（优先队列） (中等) —— 1.java:小顶堆+哈希表+栈【记】; 2.用python词频统计`sorted(d,key=lambda k:(-d[k],k))[:k]`  
 
 
 
