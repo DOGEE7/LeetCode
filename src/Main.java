@@ -26,13 +26,14 @@ class Node {
     public Node left;
     public Node right;
 
-    public Node() {}
+    public Node() {
+    }
 
     public Node(int _val) {
         val = _val;
     }
 
-    public Node(int _val,Node _left,Node _right) {
+    public Node(int _val, Node _left, Node _right) {
         val = _val;
         left = _left;
         right = _right;
@@ -40,40 +41,41 @@ class Node {
 }
 
 class Solution {
-    int k;
-    int res;
-    public int kthLargest(TreeNode root, int k) {
-        // 右中左遍历
-        this.k=k;
-        return res;
-    }
+    public boolean isBalanced(TreeNode root) {
+        // 后序遍历 + 剪枝 （从底至顶）
+        return recur(root)!=-1;
 
-    public void dfs(TreeNode node){
-        if(node==null)  return;
-        dfs(node.right);
-        k--;
-        if(k==0)    res=node.val;
-        dfs(node.left);
+    }
+    public int recur(TreeNode node){
+        if(node==null)  return 0;
+        int left=recur(node.left);
+        if(left==-1)    return -1;
+        int right=recur(node.right);
+        if(right==-1)   return -1;
+        return Math.abs(left-right)<2?Math.max(left,right)+1:-1;
+    }
+    public double convert(int[] l){
+        return l[0];
     }
 }
 
 public class Main {
     public static void main(String[] args) {
-        TreeNode root=new TreeNode(4);
-        TreeNode nodel=new TreeNode(2);
-        TreeNode noder=new TreeNode(5);
-        root.left=nodel;
-        root.right=noder;
-        TreeNode nodell=new TreeNode(1);
-        nodel.left=nodell;
-        nodel.right=new TreeNode(3);
-//        nodell.left=new TreeNode(7);
-//        nodell.right=new TreeNode(2);
-//        noder.left=new TreeNode(7);
-//        TreeNode noderr=new TreeNode(10);
-//        noder.right=noderr;
-//        noderr.left=new TreeNode(5);
-//        noderr.right=new TreeNode(1);
+        TreeNode root = new TreeNode(4);
+        TreeNode nodel = new TreeNode(2);
+        TreeNode noder = new TreeNode(5);
+        root.left = nodel;
+        root.right = noder;
+        TreeNode nodell = new TreeNode(1);
+        nodel.left = nodell;
+        nodel.right = new TreeNode(3);
+        nodell.left = new TreeNode(7);
+        nodell.right = new TreeNode(2);
+        noder.left = new TreeNode(7);
+        TreeNode noderr = new TreeNode(10);
+        noder.right = noderr;
+        noderr.left = new TreeNode(5);
+        noderr.right = new TreeNode(1);
 
 //        Node root=new Node(4);
 //        Node rootl=new Node(2);
@@ -86,7 +88,21 @@ public class Main {
 //        System.out.println(sol.uniquePaths(10,10));
 //        System.out.println(func(15,20));
         String[] words = new String[]{"the", "day", "is", "sunny", "the", "is", "day", "the", "the", "sunny", "is", "is"};
-        System.out.println(sol.kthLargest(root,3));
+//        System.out.println(sol.isBalanced(root));
+        String[] strings=new String[]{"apple","paddle","pool","offer"};
+        Arrays.sort(strings);;
+        System.out.println(strings);
+        Arrays.sort(strings,(a,b)->b.compareTo(a));
+        System.out.println(strings);
+        Arrays.sort(strings,(a,b)->(a+b).compareTo(b+a));
+        System.out.println(strings);
+        ArrayList<Integer> l=new ArrayList<>();
+        l.add(0);
+        l.add(2);
+        l.add(1,10);
+        System.out.println(l);
+        System.out.println(sol.convert(new int[]{1,2,3}));
+
 
 
 

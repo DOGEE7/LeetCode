@@ -68,6 +68,21 @@
 [剑指 Offer 36. 二叉搜索树与双向链表](https://leetcode.cn/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/) 栈 树 深度优先搜索 二叉搜索树 链表 二叉树 双向链表 (中等) —— [注意：本题与主站 426 题相同](https://leetcode-cn.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/) 知道中序遍历，但具体咋整T_T(全局变量，prev和head)      
 [剑指 Offer 54. 二叉搜索树的第k大节点](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/) 树 深度优先搜索 二叉搜索树 二叉树 (简单) —— ”简单题我重拳出击“，右根左遍历，用类变量来维护k和res(终于有一次能和大佬的代码一样了)
 
+第 16 天 排序（简单）  
+[剑指 Offer 45. 把数组排成最小的数](https://leetcode.cn/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/) 贪心 字符串 排序 (中等) —— 排序判断规则：若`x+y<y+x`，则`x<y`(`Arrays.sort(strings,(a,b)->(a+b).compareTo(b+a));`)  
+[剑指 Offer 61. 扑克牌中的顺子](https://leetcode.cn/problems/bu-ke-pai-zhong-de-shun-zi-lcof/) 数组 排序 (简单) —— 1.我的：排序+判断`num[i]+1==num[i+1]`; 2.大佬：借助set+遍历：判断是否`max-min<5`; 3.大佬的方法：排序+遍历：结合`max-min<5`判断
+
+第 17 天 排序（中等）  
+[剑指 Offer 40. 最小的k个数](https://leetcode.cn/problems/zui-xiao-de-kge-shu-lcof/) 数组 分治 快速选择 排序 堆（优先队列）(简单) —— [快排](https://leetcode.cn/problems/zui-xiao-de-kge-shu-lcof/solution/tu-jie-top-k-wen-ti-de-liang-chong-jie-fa-you-lie-/)；堆；计数排序（只冒泡k个）   
+[剑指 Offer 41. 数据流中的中位数](https://leetcode.cn/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/) 设计 双指针 数据流 排序 堆（优先队列）(困难) —— [注意：本题与主站 295 题相同](https://leetcode-cn.com/problems/find-median-from-data-stream/) 1.大佬的方法：大顶堆+小顶堆(K神yyds)；2.ArrayList+二分法查找插入新数据
+
+第 18 天 搜索与回溯算法（中等）  
+[剑指 Offer 55 - I. 二叉树的深度](https://leetcode.cn/problems/er-cha-shu-de-shen-du-lcof/) 树 深度优先搜索 广度优先搜索 二叉树 (简单) —— [注意：本题与主站 104 题相同](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/) —— 1.我的DFS类变量+先序遍历模板；2.大佬的DFS后序遍历（一行代码解决）;3.BFS层序遍历（两个队列，queue遍历，tmp计层节点，queue=tmp）      
+[剑指 Offer 55 - II. 平衡二叉树](https://leetcode.cn/problems/ping-heng-er-cha-shu-lcof/) 树 深度优先搜索 二叉树 (简单) —— [注意：本题与主站 110 题相同](https://leetcode-cn.com/problems/balanced-binary-tree/) —— 1.DFS自动向下，简单易懂，复杂度高；2.DFS自底向上，后序遍历+剪枝(递归函数返回-1或深度，如果为-1，则剪枝) 
+
+
+
+
 
 <br/>
 
