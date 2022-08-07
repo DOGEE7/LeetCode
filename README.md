@@ -80,6 +80,31 @@
 [剑指 Offer 55 - I. 二叉树的深度](https://leetcode.cn/problems/er-cha-shu-de-shen-du-lcof/) 树 深度优先搜索 广度优先搜索 二叉树 (简单) —— [注意：本题与主站 104 题相同](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/) —— 1.我的DFS类变量+先序遍历模板；2.大佬的DFS后序遍历（一行代码解决）;3.BFS层序遍历（两个队列，queue遍历，tmp计层节点，queue=tmp）      
 [剑指 Offer 55 - II. 平衡二叉树](https://leetcode.cn/problems/ping-heng-er-cha-shu-lcof/) 树 深度优先搜索 二叉树 (简单) —— [注意：本题与主站 110 题相同](https://leetcode-cn.com/problems/balanced-binary-tree/) —— 1.DFS自动向下，简单易懂，复杂度高；2.DFS自底向上，后序遍历+剪枝(递归函数返回-1或深度，如果为-1，则剪枝) 
 
+第 19 天 搜索与回溯算法（中等）   
+[剑指 Offer 64. 求1+2+…+n](https://leetcode.cn/problems/qiu-12n-lcof/) 位运算 递归 脑筋急转弯 (中等) —— 借助逻辑符短路`n>1 && (n+=sumNums(n-1))>0;`  
+[剑指 Offer 68 - I. 二叉搜索树的最近公共祖先](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof/) 树 深度优先搜索 二叉搜索树 二叉树 (简单) —— [注意：本题与主站 235 题相同](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) 迭代；递归(利用二叉搜索树的特性；二叉树最近公共祖先的通用方法）   
+[剑指 Offer 68 - II. 二叉树的最近公共祖先](https://leetcode.cn/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/) 树 深度优先搜索 二叉树 (简单) —— [注意：本题与主站 236 题相同](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/) 递归（前序遍历） 
+
+第 20 天 分治算法（中等）  
+[剑指 Offer 07. 重建二叉树](https://leetcode.cn/problems/zhong-jian-er-cha-shu-lcof/) 树 数组 哈希表 分治 二叉树 (中等) —— [注意：本题与主站 105 题重复](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)K神递归：a.无重复节点，用HashMap存储中序的val和index；b.借助4个指针root（1个指向前序）,i,left,right（3个指向中序），前序遍历：根root，左根root+1，右根root+i-left+1，中序遍历：左子树是left~i-1，右子树是i+1~right   
+[剑指 Offer 16. 数值的整数次方](https://leetcode.cn/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/) 递归 数学 (中等) ——[注意：本题与主站 50 题相同](https://leetcode-cn.com/problems/powx-n/)快速幂（二分法角度）：1.迭代；2.递归(注：int范围为-2147483648~2147483647)     
+[剑指 Offer 33. 二叉搜索树的后序遍历序列](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/) 栈 树 二叉搜索树 递归 二叉树 单调栈 (中等) —— 1.递归:设置两指针i,j，来定位左右子树的范围，左子树i~m-1，右子树m~j-1，m是查找出来的，比根大的那个为右子树的根。2.辅助单调性栈(没细看)  
+
+第 21 天 位运算（简单）  
+[剑指 Offer 15. 二进制中1的个数](https://leetcode.cn/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/) 位运算 (简单) —— [注意：本题与主站 191 题相同](https://leetcode-cn.com/problems/number-of-1-bits/) 1.逐位判断；2.巧用`n&(n−1)`；3.内置函数Integer.bitCount()   
+[剑指 Offer 65. 不用加减乘除做加法](https://leetcode.cn/problems/bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof/) 位运算 数学 (简单) —— 位运算：`int c=(a&b)<<1; //进位 a=a^b;  //不进位相加相加`【记忆】  
+
+第 22 天 位运算（中等）  
+[剑指 Offer 56 - I. 数组中数字出现的次数](https://leetcode.cn/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/) 位运算 数组 (中等)——借助Set:空间复杂度不为O(1)；分组异或【膜拜大佬】;排序后遍历（时间复杂度不符合O(n)）  
+[剑指 Offer 56 - II. 数组中数字出现的次数 II](https://leetcode.cn/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof/) 位运算 数组 (中等)——1.借助HashMap；2.对每位数字求和取余（%3），余数构成落单的数；3.有限状态机（看不懂..）
+
+第 23 天 数学（简单）  
+[剑指 Offer 39. 数组中出现次数超过一半的数字](https://leetcode.cn/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/) 数组 哈希表 分治 计数 排序 （简单）——    
+[剑指 Offer 66. 构建乘积数组]() 数组 前缀和 (中等)
+
+
+
+
 
 
 
