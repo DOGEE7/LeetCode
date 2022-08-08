@@ -92,17 +92,24 @@
 
 第 21 天 位运算（简单）  
 [剑指 Offer 15. 二进制中1的个数](https://leetcode.cn/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/) 位运算 (简单) —— [注意：本题与主站 191 题相同](https://leetcode-cn.com/problems/number-of-1-bits/) 1.逐位判断；2.巧用`n&(n−1)`；3.内置函数Integer.bitCount()   
-[剑指 Offer 65. 不用加减乘除做加法](https://leetcode.cn/problems/bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof/) 位运算 数学 (简单) —— 位运算：`int c=(a&b)<<1; //进位 a=a^b;  //不进位相加相加`【记忆】  
+[剑指 Offer 65. 不用加减乘除做加法](https://leetcode.cn/problems/bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof/) 位运算 数学 (简单) —— 位运算：`int c=(a&b)<<1; //进位 a=a^b;  //不进位相加`【记忆】  
 
 第 22 天 位运算（中等）  
 [剑指 Offer 56 - I. 数组中数字出现的次数](https://leetcode.cn/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/) 位运算 数组 (中等)——借助Set:空间复杂度不为O(1)；分组异或【膜拜大佬】;排序后遍历（时间复杂度不符合O(n)）  
 [剑指 Offer 56 - II. 数组中数字出现的次数 II](https://leetcode.cn/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof/) 位运算 数组 (中等)——1.借助HashMap；2.对每位数字求和取余（%3），余数构成落单的数；3.有限状态机（看不懂..）
 
 第 23 天 数学（简单）  
-[剑指 Offer 39. 数组中出现次数超过一半的数字](https://leetcode.cn/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/) 数组 哈希表 分治 计数 排序 （简单）——    
-[剑指 Offer 66. 构建乘积数组]() 数组 前缀和 (中等)
+[剑指 Offer 39. 数组中出现次数超过一半的数字](https://leetcode.cn/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/) 数组 哈希表 分治 计数 排序 （简单）—— [注意：本题与主站 169 题相同](https://leetcode-cn.com/problems/majority-element/)相同数超过一半：1.HashMap；2.排序后的中位数；3.摩尔投票  
+[剑指 Offer 66. 构建乘积数组](https://leetcode.cn/problems/gou-jian-cheng-ji-shu-zu-lcof/) 数组 前缀和 (中等) —— 前缀和，正序；倒序，每次到i前一个或后一个就停止，即跳过i
 
+第 24 天 数学（中等）  
+[剑指 Offer 14- I. 剪绳子](https://leetcode.cn/problems/jian-sheng-zi-lcof/) 数学 动态规划 （中等）—— [注意：本题与主站 343 题相同](https://leetcode-cn.com/problems/integer-break/)——1.数学推导：当所有绳段长度相等时乘积最大，最优的绳段长度为3；2.动态规划——内核也是贪心;3.贪心算法  
+[剑指 Offer 57 - II. 和为s的连续正数序列](https://leetcode.cn/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/submissions/) 数学 双指针 枚举(简单)——1.滑动窗口：双指针`ArrayList<int[]> list; return list.toArray(new int[0][])`  
+[剑指 Offer 62. 圆圈中最后剩下的数字](https://leetcode.cn/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/) 递归 数学(简单)——1.ArrayList`idx=(idx+m-1)%n;`;2.数学公式推导`(ans+m)%i`(动态规划，反推活下来的那个人的初始位置)  
 
+第 25 天 模拟（中等）  
+[剑指 Offer 29. 顺时针打印矩阵](https://leetcode.cn/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/) 数组 矩阵 模拟 (简单)——[注意：本题与主站 54 题相同](https://leetcode-cn.com/problems/spiral-matrix/)遍历：设置四个指针作为边界    
+[剑指 Offer 31. 栈的压入、弹出序列](https://leetcode.cn/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/) 栈 数组 模拟 (中等)——[注意：本题与主站 946 题相同](https://leetcode-cn.com/problems/validate-stack-sequences/)模拟入栈出栈  
 
 
 

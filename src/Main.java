@@ -1,5 +1,3 @@
-import javax.swing.*;
-import java.lang.reflect.Array;
 import java.util.*;
 
 class ListNode {
@@ -41,47 +39,24 @@ class Node {
 }
 
 class Solution {
-    public boolean isBalanced(TreeNode root) {
-        // 后序遍历 + 剪枝 （从底至顶）
-        return recur(root)!=-1;
-
-    }
-    public int recur(TreeNode node){
-        if(node==null)  return 0;
-        int left=recur(node.left);
-        if(left==-1)    return -1;
-        int right=recur(node.right);
-        if(right==-1)   return -1;
-        return Math.abs(left-right)<2?Math.max(left,right)+1:-1;
-    }
-    public double convert(int[] l){
-        return l[0];
-    }
-
-    public int totalSteps (int[] nums) {
-        // write code here
-        int res=0;
-        int n=nums.length;
-        int count=1;    //统计本次数组中被删除的个数
-        int prev = 0,curr;
-        while(count!=0){
-            count=0;
-            for(int i=0;i<n;i++){
-                if(i==0){
-                    prev=nums[0];
-                    continue;
-                }
-                if(nums[i]==0)  continue;
-                curr=nums[i];
-                if(prev>curr){
-                    nums[i]=0;
-                    count++;
-                }
-                prev=curr;
+    public boolean validateStackSequences(int[] pushed, int[] popped) {
+        // 模拟入栈出栈
+        Deque<Integer> stack=new LinkedList<>();
+        if(pushed.length==0)    return true;
+        int i=0;
+        int j=0;
+        stack.push(pushed[i++]);
+        while (!stack.isEmpty() && j<pushed.length){
+            while (stack.peek()!=popped[j] && i<pushed.length){
+                stack.push(pushed[i++]);
             }
-            if(count!=0)    res++;
+            if(stack.peek()==popped[j]){
+                stack.pop();
+                j++;
+            }else   break;
         }
-        return res;
+        if(!stack.isEmpty())    return false;
+        return true;
     }
 }
 
@@ -114,7 +89,7 @@ public class Main {
 //        System.out.println(sol.uniquePaths(10,10));
 //        System.out.println(func(15,20));
         String[] words = new String[]{"the", "day", "is", "sunny", "the", "is", "day", "the", "the", "sunny", "is", "is"};
-//        System.out.println(sol.isBalanced(root));
+        System.out.println(sol.validateStackSequences(new int[]{1,2,3,4,5},new int[]{4,3,5,1,2}));
 //        String[] strings=new String[]{"apple","paddle","pool","offer"};
 //        Arrays.sort(strings);;
 //        System.out.println(strings);
@@ -129,30 +104,27 @@ public class Main {
 //        System.out.println(l);
 //        System.out.println(sol.totalSteps(new int[]{5,4,3,2,1,1,1,1}));
         Scanner in = new Scanner(System.in);
-        while (in.hasNextInt()) {// 注意，如果输入是多个测试用例，请通过while循环处理多个测试用例
-            int n1 = in.nextInt();      // 变量数
-            Map<Character,String> map=new HashMap<>();
-            for (int i = 0; i < n1; i++) {
-                String k=in.next();
-                String v=in.next();
-                map.put(k.charAt(0),v);
-            }
-            int n2 = in.nextInt();      // 表达式个数
-            for(int i=0;i<n2;i++){
-                String s=in.next();
-                String[] strings=s.split("\\s+");
-                for(int j=0;j<strings.length;j++){
-                    int res=0;
-                    if(strings[j].length()==1 && strings[j].charAt(0)-'a'>=0 && strings[j].charAt(0)-'a'<=26){
-                        res+=map.get(strings[j].charAt(0)).length()==1?map.get(strings[j].charAt(0)).charAt(0)-'0':0;
-                    }
-                    
-                }
-            }
-
-
-        }
-
+//        while (in.hasNextInt()) {// 注意，如果输入是多个测试用例，请通过while循环处理多个测试用例
+//            int n1 = in.nextInt();      // 变量数
+//            Map<Character,String> map=new HashMap<>();
+//
+//            for (int i = 0; i < n1; i++) {
+//                String k=in.next();
+//                String v=in.next();
+//                map.put(k.charAt(0),v);
+//            }
+//            int n2 = in.nextInt();      // 表达式个数
+//            for(int i=0;i<n2;i++){
+//                String s=in.next();
+//                String[] strings=s.split("\\s+");
+//                for(int j=0;j<strings.length;j++){
+//                    int res=0;
+//                    if(strings[j].length()==1 && strings[j].charAt(0)-'a'>=0 && strings[j].charAt(0)-'a'<=26){
+//                        res+=map.get(strings[j].charAt(0)).length()==1?map.get(strings[j].charAt(0)).charAt(0)-'0':0;
+//                    }
+//                }
+//            }
+//        }
 
 
 

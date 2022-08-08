@@ -37,11 +37,12 @@ public class Solution1 {
         return maxLen;
     }
 
+
     public static void main(String[] args) {
         Solution1 sol=new Solution1();
 //        System.out.println(sol.lengthOfLongestSubstring("abcbbcacab"));
         int a=Integer.parseInt("12");
         int b=Integer.valueOf("12").intValue();
-        
+
     }
 }
